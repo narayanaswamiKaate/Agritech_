@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrizen - Best Crop Care Company in India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        display: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        'agri-green': {
+                            50: '#f4faf2',
+                            100: '#e5f5df',
+                            500: '#56af43',
+                            600: '#489338',
+                            700: '#3a762d',
+                            800: '#2c5922',
+                            900: '#1e3d17',
+                        },
+                        'agri-dark': '#121812',
+                        'agri-navy-light': '#2d3b2d',
+                        'agri-earth': '#78350f',
+                        'agri-gold': '#f59e0b',
+                        'agri-bronze': '#92400e',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body class="min-h-screen" id="home">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-[100] pointer-events-none nav-hidden" id="main-nav">
+        <div class="pointer-events-auto w-full transition-all duration-500 nav-bar-inner px-6 lg:px-12 flex justify-between items-center h-24"
+            style="background: transparent;">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center group cursor-pointer shrink-0">
+                <img src="./assets/logo.png" alt="Agrizen Logo"
+                    class="h-28 lg:h-36 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-x-1">
+                <a href="#home" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_home"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">Home</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#about" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_about"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">About</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#crops" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_crops"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">Crops</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#products" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_products"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">Products</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#news" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_knowledge"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">Knowledge</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#testimonials"
+                    class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_testimonials"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">Testimonials</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+                <a href="#faq" class="nav-link group px-4 py-2 rounded-lg transition-all duration-200 relative">
+                    <span data-tr="nav_faq"
+                        class="text-[12px] font-bold uppercase tracking-widest nav-link-text transition-colors text-white/90 group-hover:text-agri-green-400">FAQ</span>
+                    <span
+                        class="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-agri-green-400 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                </a>
+
+                <!-- Language Selector -->
+                <div class="relative ml-4 inline-block text-left pointer-events-auto">
+                    <select id="desktop-lang"
+                        class="bg-white/10 text-[11px] text-white border border-white/20 rounded-full px-3 py-2 outline-none cursor-pointer font-bold uppercase tracking-wider backdrop-blur-md transition-all duration-300">
+                        <option value="en" class="text-slate-800 bg-white">English</option>
+                        <option value="hi" class="text-slate-800 bg-white">हिन्दी</option>
+                        <option value="te" class="text-slate-800 bg-white">తెలుగు</option>
+                        <option value="ta" class="text-slate-800 bg-white">தமிழ்</option>
+                    </select>
+                </div>
+
+                <a href="#contact" data-tr="nav_contact"
+                    class="ml-4 bg-agri-green-500 hover:bg-agri-green-600 text-white text-[12px] font-bold uppercase tracking-widest px-6 py-2.5 rounded-full transition-all shadow-lg shadow-agri-green-500/30 hover:shadow-agri-green-600/40 hover:-translate-y-0.5 active:translate-y-0">
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button id="mobile-menu-toggle"
+                class="lg:hidden p-2.5 text-white bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl shadow-lg pointer-events-auto transition-all hover:bg-white/20">
+                <i data-lucide="menu" class="w-5 h-5"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="lg:hidden absolute top-20 left-4 right-4 bg-white shadow-2xl p-6 rounded-2xl flex flex-col gap-2 border border-slate-100 pointer-events-auto">
+            <a href="#home"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_home">Home</span> <i data-lucide="chevron-right" class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#about"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_about">About</span> <i data-lucide="chevron-right" class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#crops"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_crops">Crops</span> <i data-lucide="chevron-right" class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#products"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_products">Products</span> <i data-lucide="chevron-right"
+                    class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#news"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_knowledge">Knowledge</span> <i data-lucide="chevron-right"
+                    class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#testimonials"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_testimonials">Testimonials</span> <i data-lucide="chevron-right"
+                    class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#faq"
+                class="flex justify-between items-center px-4 py-3 rounded-xl text-slate-700 hover:bg-agri-green-50 hover:text-agri-green-600 transition-colors font-bold uppercase tracking-widest text-xs cursor-pointer">
+                <span data-tr="nav_faq">FAQ</span> <i data-lucide="chevron-right" class="w-4 h-4 opacity-40"></i>
+            </a>
+            <a href="#contact"
+                class="mt-2 flex justify-center items-center gap-2 bg-agri-green-500 hover:bg-agri-green-600 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-xs transition-all shadow-lg shadow-agri-green-500/20 cursor-pointer">
+                <i data-lucide="mail" class="w-4 h-4"></i> <span data-tr="nav_contact">Contact Us</span>
+            </a>
+
+            <!-- Mobile Language Dropdown -->
+            <div class="flex items-center justify-between border-t border-slate-100 pt-4 mt-2 px-4">
+                <span class="text-slate-400 font-bold uppercase tracking-widest text-[10px]"
+                    data-tr="mobile_lang_select">Select Language</span>
+                <select id="mobile-lang"
+                    class="bg-slate-100 text-xs text-slate-700 border border-slate-200 rounded-xl px-3 py-2 outline-none cursor-pointer font-bold uppercase tracking-wider">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="ta">தமிழ்</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebars -->
+
+    <div class="hidden lg:fixed lg:flex right-0 top-1/2 -translate-y-1/2 z-50 flex-col pointer-events-none">
+        <a href="./assets/Agrizen Brochure 2.pdf" download="Agrizen_Brochure.pdf"
+            class="pointer-events-auto bg-agri-green-600 text-white py-4 px-2 rounded-l-lg shadow-2xl flex items-center gap-2 [writing-mode:vertical-lr] font-medium hover:bg-agri-green-700 transition-all translate-x-[100%] reveal-right translate-x-0">
+            <i data-lucide="file-down" class="-rotate-90 w-5 h-5"></i>
+            Brochure
+        </a>
+    </div>
+
+    <!-- ===== VIDEO HERO SECTION ===== -->
+    <section class="relative w-full overflow-hidden video-hero" id="hero-section">
+
+        <!-- Full-screen background video -->
+        <video id="hero-video" class="absolute inset-0 w-full h-full object-cover z-0" src="./assets/hero-video.mp4"
+            autoplay muted loop playsinline></video>
+
+        <!-- Multi-layer cinematic overlay -->
+        <!-- Top gradient — dark strip so navbar is legible after it appears -->
+        <div class="absolute inset-0 z-[1] hero-vid-top-fade pointer-events-none"></div>
+        <!-- Strong bottom gradient for text readability -->
+        <div class="absolute inset-0 z-[1] hero-vid-bottom-fade pointer-events-none"></div>
+        <!-- Full-screen dark veil (subtle, just tints the video) -->
+        <div class="absolute inset-0 z-[1] bg-black/30 pointer-events-none"></div>
+
+        <!-- Dot-grid texture (very subtle) -->
+        <div class="absolute inset-0 z-[2] hero-grid pointer-events-none opacity-20"></div>
+
+        <!-- ===== BOTTOM TEXT OVERLAY ===== -->
+        <div class="absolute inset-x-0 bottom-0 z-[10] pb-16 lg:pb-24 px-6 lg:px-16 hidden lg:block">
+
+            <!-- Badge -->
+            <div
+                class="hero-badge inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-5 py-2.5 mb-6">
+                <span class="w-2 h-2 rounded-full bg-agri-green-400 hero-pulse"></span>
+                <span class="text-white/90 text-[11px] font-bold tracking-[0.24em] uppercase"
+                    data-tr="hero_badge">Advanced Crop Protection · Est. 2013</span>
+            </div>
+
+            <!-- Main headline -->
+            <h1 class="font-display font-extrabold text-white tracking-tight mb-4 leading-[0.95]">
+                <span class="block hero-line-1" style="font-size:clamp(1.6rem,3.8vw,3.8rem);"
+                    data-tr="hero_line_1">Empowering</span>
+                <span class="block hero-line-2 hero-green-gradient" style="font-size:clamp(1.6rem,3.8vw,3.8rem);"
+                    data-tr="hero_line_2">India's Farmers.</span>
+                <span class="block hero-line-3 text-white/50 font-light tracking-wide mt-2"
+                    style="font-size:clamp(0.75rem,1.4vw,1.3rem);" data-tr="hero_line_3">Nurturing Growth. Sustaining
+                    Tomorrow.</span>
+            </h1>
+
+            <!-- Divider rule -->
+            <div class="hero-rule w-20 h-[2px] bg-gradient-to-r from-agri-green-400 to-transparent mb-6"></div>
+
+            <!-- Sub-description -->
+            <p class="hero-sub hidden lg:block text-white/60 text-sm lg:text-base font-normal leading-relaxed mb-8 max-w-xl"
+                data-tr="hero_sub">
+                Scientifically advanced crop care solutions trusted by thousands of farmers across India —
+                driving higher yields, healthier soil, and a greener future.
+            </p>
+
+            <!-- CTA Buttons + Stats row -->
+            <div class="hero-ctas flex flex-col sm:flex-row sm:items-center gap-6">
+
+                <!-- CTA buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <a href="#products"
+                        class="group relative flex items-center gap-3 bg-agri-green-500 text-white px-7 py-3.5 rounded-full font-bold transition-all duration-300 shadow-2xl shadow-agri-green-500/40 hover:shadow-agri-green-500/70 hover:-translate-y-1 text-sm uppercase tracking-wider overflow-hidden">
+                        <span
+                            class="absolute inset-0 bg-agri-green-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out rounded-full"></span>
+                        <span class="relative z-10" data-tr="hero_explore">Explore Products</span>
+                        <span
+                            class="relative z-10 w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                            <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                        </span>
+                    </a>
+                    <a href="#contact"
+                        class="group flex items-center gap-3 border border-white/40 text-white px-7 py-3.5 rounded-full font-bold hover:bg-white/10 hover:border-white/70 transition-all duration-300 backdrop-blur-sm text-sm uppercase tracking-wider hover:-translate-y-1">
+                        <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+                        <span data-tr="hero_contact">Contact Us</span>
+                    </a>
+                </div>
+
+                <!-- Divider -->
+                <div class="hidden sm:block w-px h-10 bg-white/15"></div>
+
+                <!-- Stats row -->
+                <div class="hero-stats flex flex-wrap gap-6">
+                    <div class="hero-stat">
+                        <div class="text-xl lg:text-2xl font-black text-white tracking-tight">10+</div>
+                        <div class="text-[9px] text-white/40 font-bold uppercase tracking-[0.2em]">Years</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="text-xl lg:text-2xl font-black text-white tracking-tight">250+</div>
+                        <div class="text-[9px] text-white/40 font-bold uppercase tracking-[0.2em]">Experts</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="text-xl lg:text-2xl font-black text-white tracking-tight">8+</div>
+                        <div class="text-[9px] text-white/40 font-bold uppercase tracking-[0.2em]">Crops</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="text-xl lg:text-2xl font-black text-agri-green-400 tracking-tight">Pan-India</div>
+                        <div class="text-[9px] text-white/40 font-bold uppercase tracking-[0.2em]">Reach</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll mouse indicator (bottom-centre) -->
+        <div class="hero-scroll absolute bottom-5 right-8 z-[10] hidden lg:flex flex-col items-center gap-1.5">
+            <div
+                class="hero-scroll-mouse w-5 h-8 border border-white/25 rounded-full flex items-start justify-center pt-1.5">
+                <div class="w-0.5 h-1.5 bg-white/50 rounded-full hero-scroll-dot"></div>
+            </div>
+            <span class="text-white/25 text-[8px] font-bold uppercase tracking-[0.3em]">Scroll</span>
+        </div>
+
+
+
+        <!-- Wave Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-[11] pointer-events-none">
+            <svg class="relative block w-full h-[50px] lg:h-[70px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.83C31.25,108.62,63.14,103.88,96.48,97.7,143,89.1,190.41,80.78,237.58,74.78,265.49,71.25,293.42,67,321.39,56.44Z"
+                    fill="white"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-12 relative overflow-hidden bg-[#fbf9f4]">
+        <div class="absolute inset-0 opacity-[0.4] pointer-events-none"
+            style="background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png')"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative reveal-scale">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-tr from-agri-dark/5 to-transparent rounded-3xl -z-10 transform -rotate-3 transition-transform group-hover:rotate-0">
+                        </div>
+                        <div
+                            class="rounded-2xl overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.15)] relative border-8 border-white">
+                            <img src="./assets/banner.jpeg" alt="Agrizen Products"
+                                class="w-full h-auto transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-agri-dark/40 to-transparent"></div>
+                        </div>
+                        <button
+                            class="video-play-btn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-24 md:h-24 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-2xl text-agri-green-500 hover:scale-110 transition-transform group z-20"
+                            data-title="R&D Innovations">
+                            <div
+                                class="w-12 h-12 md:w-20 md:h-20 bg-white border-4 md:border-8 border-agri-green-50 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 md:w-10 md:h-10 fill-current ml-1" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reveal-right">
+                    <div class="inline-flex items-center gap-3 mb-6">
+                        <span class="h-0.5 w-10 bg-agri-green-500"></span>
+                        <span class="text-agri-green-600 font-bold tracking-[0.2em] text-xs uppercase"
+                            data-tr="about_badge">Premium
+                            Excellence Since 2013</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-7xl font-bold text-agri-dark mb-8 leading-[1.05] font-display">
+                        <span data-tr="about_title_1">AGRIZEN - BEST</span> <br>
+                        <span class="text-agri-green-500 italic" data-tr="about_title_2">CROP CARE</span> <br>
+                        <span data-tr="about_title_3">COMPANY IN INDIA</span>
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed mb-8 text-lg font-light" data-tr="about_text_1">
+                        Redefining the paradigms of professional excellence, we, <span
+                            class="font-semibold text-agri-dark underline decoration-agri-green-500 underline-offset-4 decoration-2">"AGRIZEN
+                            CROP CARE GROUP."</span> established with an aim to cater to the various requirements of
+                        farmer community.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 lg:gap-8">
+                        <div
+                            class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm flex items-center gap-4 hover:shadow-xl transition-all">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-agri-green-50 flex items-center justify-center text-agri-green-600">
+                                <i data-lucide="globe" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-agri-dark" data-tr="about_stat_1_num">2013</div>
+                                <div class="text-xs text-slate-400 font-bold uppercase tracking-widest"
+                                    data-tr="about_stat_1_text">Founded In</div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white/50 backdrop-blur-sm p-6 rounded-2xl border border-white shadow-sm flex items-center gap-4 hover:shadow-xl transition-all">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-agri-green-50 flex items-center justify-center text-agri-green-600">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-2xl font-bold text-agri-dark" data-tr="about_stat_2_num">250+</div>
+                                <div class="text-xs text-slate-400 font-bold uppercase tracking-widest"
+                                    data-tr="about_stat_2_text">Expert Team</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                        class="mt-12 flex items-center gap-3 text-agri-dark font-bold group">
+                        <span
+                            class="bg-agri-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform"><i
+                                data-lucide="arrow-right" class="w-5 h-5"></i></span>
+                        <span
+                            class="border-b-2 border-transparent group-hover:border-agri-green-600 transition-colors uppercase tracking-[0.2em] text-xs">Learn
+                            More About Us</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expanded About Content -->
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="mt-24 grid lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Left: Product Orbit Animation -->
+                <div
+                    class="lg:col-span-6 relative reveal-left flex items-center justify-center h-full min-h-[350px] sm:min-h-[450px] lg:min-h-[500px]">
+                    <style>
+                        @keyframes spin-reverse {
+                            0% {
+                                transform: translate(-50%, -50%) rotate(0deg);
+                            }
+
+                            100% {
+                                transform: translate(-50%, -50%) rotate(-360deg);
+                            }
+                        }
+
+                        .orbit-item {
+                            animation: spin-reverse 20s linear infinite;
+                        }
+                    </style>
+                    <div
+                        class="relative w-full aspect-square max-w-[280px] sm:max-w-[400px] lg:max-w-[500px] mx-auto rounded-full bg-white/40 backdrop-blur-3xl border border-white/60 shadow-2xl flex items-center justify-center">
+
+                        <!-- Inner dashed rings -->
+                        <div
+                            class="absolute inset-4 sm:inset-8 rounded-full border border-dashed border-agri-green-500/30">
+                        </div>
+                        <div
+                            class="absolute inset-10 sm:inset-20 rounded-full border border-dashed border-agri-green-500/20">
+                        </div>
+
+                        <!-- Rotating orbit container -->
+                        <div class="absolute inset-0 rounded-full animate-[spin_20s_linear_infinite]">
+
+                            <!-- 0 degrees (top) -->
+                            <div
+                                class="absolute left-1/2 top-0 w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/cotton.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Cotton">
+                            </div>
+
+                            <!-- 60 degrees -->
+                            <div
+                                class="absolute left-[93.3%] top-[25%] w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/paddy.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Paddy">
+                            </div>
+
+                            <!-- 120 degrees -->
+                            <div
+                                class="absolute left-[93.3%] top-[75%] w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/mango.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Mango">
+                            </div>
+
+                            <!-- 180 degrees -->
+                            <div
+                                class="absolute left-1/2 top-full w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/citrus.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Citrus">
+                            </div>
+
+                            <!-- 240 degrees -->
+                            <div
+                                class="absolute left-[6.7%] top-[75%] w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/mirchi.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Chilli">
+                            </div>
+
+                            <!-- 300 degrees -->
+                            <div
+                                class="absolute left-[6.7%] top-[25%] w-12 h-12 sm:w-16 lg:w-20 sm:h-16 lg:h-20 rounded-full border-2 sm:border-[4px] border-white shadow-xl overflow-hidden bg-white flex items-center justify-center orbit-item group cursor-pointer hover:border-agri-green-400 transition-colors">
+                                <img src="./assets/wheat.png"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                                    alt="Wheat">
+                            </div>
+                        </div>
+
+                        <!-- Center Product -->
+                        <div
+                            class="relative z-10 w-32 h-32 sm:w-44 sm:h-44 lg:w-56 lg:h-56 rounded-full bg-white shadow-2xl flex flex-col items-center justify-center border-4 sm:border-[6px] border-agri-green-500/20 hover:scale-105 transition-transform duration-500 hover:shadow-agri-green-500/40 cursor-pointer">
+                            <div class="absolute inset-0 rounded-full bg-agri-green-500/10 animate-ping opacity-40">
+                            </div>
+                            <img id="orbit-center-product" src="./assets/BISON.png"
+                                class="h-20 sm:h-28 lg:h-36 w-auto object-contain drop-shadow-2xl z-10 transition-opacity duration-500"
+                                alt="Agrizen Product">
+                            <div
+                                class="absolute -bottom-2 sm:-bottom-4 bg-agri-green-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 sm:px-6 sm:py-2 rounded-full shadow-lg z-20 whitespace-nowrap">
+                                Agrizen Product</div>
+                        </div>
+                    </div>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const products = [
+                                './assets/BISON.png',
+                                './assets/ELITE PLUS.png',
+                                './assets/ROOT KING.png',
+                                './assets/AGRIVAM.png'
+                            ];
+                            let currentProdIdx = 0;
+                            const centerImg = document.getElementById('orbit-center-product');
+
+                            if (centerImg) {
+                                setInterval(() => {
+                                    centerImg.style.opacity = '0';
+                                    setTimeout(() => {
+                                        currentProdIdx = (currentProdIdx + 1) % products.length;
+                                        centerImg.src = products[currentProdIdx];
+                                        centerImg.style.opacity = '1';
+                                    }, 500);
+                                }, 3000);
+                            }
+                        });
+                    </script>
+                </div>
+
+                <!-- Right: 3 Cards Stacked -->
+                <div class="lg:col-span-6 flex flex-col gap-6 reveal-right">
+
+                    <!-- Mission -->
+                    <div
+                        class="group bg-white hover:bg-agri-green-500 transition-colors duration-500 p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-agri-green-500/30 border border-slate-100 flex flex-col sm:flex-row gap-6 items-start transform hover:-translate-y-1">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-agri-green-50 group-hover:bg-white/20 flex items-center justify-center text-agri-green-600 group-hover:text-white shrink-0 transition-colors duration-500">
+                            <i data-lucide="target" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-black text-agri-dark group-hover:text-white uppercase tracking-tight mb-3 transition-colors duration-500"
+                                data-tr="mission_title">Our Mission</h3>
+                            <p class="text-slate-600 group-hover:text-white/90 leading-relaxed text-sm transition-colors duration-500"
+                                data-tr="mission_desc">To empower farmers with innovative, sustainable, and highly
+                                effective crop care solutions that maximize yield while preserving soil health and the
+                                environment.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vision -->
+                    <div
+                        class="group bg-agri-dark hover:bg-agri-green-600 transition-colors duration-500 p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-agri-green-600/30 border border-agri-dark flex flex-col sm:flex-row gap-6 items-start transform hover:-translate-y-1">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-white/10 group-hover:bg-white/20 flex items-center justify-center text-agri-green-500 group-hover:text-white shrink-0 transition-colors duration-500 border border-white/10">
+                            <i data-lucide="eye" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl sm:text-2xl font-black text-white uppercase tracking-tight mb-3"
+                                data-tr="vision_title">Our Vision</h3>
+                            <p class="text-white/70 group-hover:text-white/90 leading-relaxed text-sm transition-colors duration-500"
+                                data-tr="vision_desc">To become the global standard in agricultural excellence by
+                                pioneering research-driven biological and chemical products that ensure future food
+                                security.</p>
+                        </div>
+                    </div>
+
+                    <!-- Core Values -->
+                    <div
+                        class="group bg-white hover:bg-agri-green-500 transition-colors duration-500 p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl hover:shadow-agri-green-500/30 border border-slate-100 flex flex-col sm:flex-row gap-6 items-start transform hover:-translate-y-1">
+                        <div
+                            class="w-16 h-16 rounded-2xl bg-agri-gold/10 group-hover:bg-white/20 flex items-center justify-center text-agri-gold group-hover:text-white shrink-0 transition-colors duration-500">
+                            <i data-lucide="award" class="w-8 h-8"></i>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="text-xl sm:text-2xl font-black text-agri-dark group-hover:text-white uppercase tracking-tight mb-4 transition-colors duration-500"
+                                data-tr="values_title">Core Values</h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div
+                                    class="flex items-center gap-3 text-slate-600 group-hover:text-white/90 transition-colors duration-500 text-sm font-bold">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-5 h-5 text-agri-green-500 group-hover:text-white shrink-0 transition-colors"></i>
+                                    <span data-tr="value_1">Innovation & Research</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 text-slate-600 group-hover:text-white/90 transition-colors duration-500 text-sm font-bold">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-5 h-5 text-agri-green-500 group-hover:text-white shrink-0 transition-colors"></i>
+                                    <span data-tr="value_2">Quality Assurance</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 text-slate-600 group-hover:text-white/90 transition-colors duration-500 text-sm font-bold">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-5 h-5 text-agri-green-500 group-hover:text-white shrink-0 transition-colors"></i>
+                                    <span data-tr="value_3">Farmer Centricity</span>
+                                </div>
+                                <div
+                                    class="flex items-center gap-3 text-slate-600 group-hover:text-white/90 transition-colors duration-500 text-sm font-bold">
+                                    <i data-lucide="check-circle-2"
+                                        class="w-5 h-5 text-agri-green-500 group-hover:text-white shrink-0 transition-colors"></i>
+                                    <span data-tr="value_4">Sustainable Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crops -->
+    <section id="crops" class="py-16 lg:py-24 relative overflow-hidden bg-white">
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <img src="./assets/cropbg.jpg" class="w-full h-full object-cover opacity-60" alt="Crops Background">
+            <div class="absolute inset-0 bg-white/80 backdrop-blur-[2px]"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl mb-10 lg:mb-20 reveal">
+                <h2 class="text-5xl font-black text-agri-dark tracking-tighter uppercase mb-6">
+                    <span data-tr="crops_title_1">Crops We</span> <br>
+                    <span class="text-agri-green-500 italic" data-tr="crops_title_2">Empower.</span>
+                </h2>
+                <p class="text-slate-400 font-medium" data-tr="crops_desc">Diverse solutions for diverse fields. Every
+                    crop has a unique
+                    story; we provide the science to finish it beautifully.</p>
+            </div>
+            <div class="marquee-container mt-12">
+                <div class="marquee-track">
+                    <!-- First Set of Crops -->
+                    <div class="flex gap-12 items-center">
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600"
+                                    class="w-full h-full object-cover" alt="Tomato">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_tomato">Tomato</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/paddy.png" class="w-full h-full object-cover" alt="Paddy">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_paddy">Paddy</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/mango.png" class="w-full h-full object-cover" alt="Mango">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_mango">Mango</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/cotton.png" class="w-full h-full object-cover" alt="Cotton">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_cotton">Cotton</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/citrus.png" class="w-full h-full object-cover" alt="Citrus">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_citrus">Citrus</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/mirchi.png" class="w-full h-full object-cover" alt="Chilli">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_chilli">Chilli</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/wheat.png" class="w-full h-full object-cover" alt="Wheat">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_wheat">Wheat</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/cashew.png" class="w-full h-full object-cover" alt="Cashew">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_cashew">Cashew</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/sugarcane.png" class="w-full h-full object-cover" alt="Sugarcane">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_sugarcane">Sugarcane</span>
+                        </div>
+                    </div>
+
+                    <!-- Second Set of Crops (Duplicate for infinite scroll loop) -->
+                    <div class="flex gap-12 items-center" aria-hidden="true">
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&q=80&w=600"
+                                    class="w-full h-full object-cover" alt="Tomato">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_tomato">Tomato</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/paddy.png" class="w-full h-full object-cover" alt="Paddy">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_paddy">Paddy</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/mango.png" class="w-full h-full object-cover" alt="Mango">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_mango">Mango</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/cotton.png" class="w-full h-full object-cover" alt="Cotton">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_cotton">Cotton</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/citrus.png" class="w-full h-full object-cover" alt="Citrus">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_citrus">Citrus</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/mirchi.png" class="w-full h-full object-cover" alt="Chilli">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_chilli">Chilli</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&q=80&w=600"
+                                    class="w-full h-full object-cover" alt="Wheat">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_wheat">Wheat</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/cashew.png" class="w-full h-full object-cover" alt="Cashew">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_cashew">Cashew</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="https://images.unsplash.com/photo-1517409276949-0d359dcab381?auto=format&fit=crop&q=80&w=600"
+                                    class="w-full h-full object-cover" alt="Soybean">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_soybean">Soybean</span>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-5 shrink-0">
+                            <div
+                                class="relative w-36 h-36 lg:w-44 lg:h-44 overflow-hidden rounded-full shadow-lg border-[3px] border-agri-green-500/20">
+                                <img src="./assets/sugarcane.png" class="w-full h-full object-cover" alt="Sugarcane">
+                            </div>
+                            <span class="font-black text-sm uppercase tracking-[0.3em] text-agri-dark"
+                                data-tr="crop_sugarcane">Sugarcane</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-16 lg:py-32 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div
+                class="flex flex-col lg:flex-row justify-between items-baseline mb-12 lg:mb-24 gap-8 border-b border-agri-dark/5 pb-8 lg:pb-12 reveal">
+                <div class="max-w-2xl">
+                    <span class="text-agri-green-600 font-bold tracking-[0.3em] uppercase text-xs mb-4 block"
+                        data-tr="products_badge">Product
+                        Catalog</span>
+                    <h2
+                        class="text-5xl lg:text-7xl font-black text-agri-dark leading-none tracking-tighter uppercase mb-6">
+                        <span data-tr="products_title_1">Our Product</span><br>
+                        <span data-tr="products_title_2">Range</span>
+                    </h2>
+                    <p class="text-slate-500 font-medium text-lg italic tracking-tight" data-tr="products_desc">Our
+                        comprehensive range of
+                        high-efficiency agricultural specialty products.</p>
+                </div>
+            </div>
+            <div id="product-grid" class="flex flex-col gap-32">
+                <!-- Products will be dynamically generated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="py-32 bg-white relative overflow-hidden border-t border-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row justify-between items-end mb-24 gap-8 reveal">
+                <div class="max-w-2xl">
+                    <span class="text-agri-green-600 font-bold tracking-[0.3em] uppercase text-xs mb-4 block"
+                        data-tr="news_label">Knowledge
+                        & News</span>
+                    <h2 class="text-5xl lg:text-7xl font-black text-agri-dark leading-none tracking-tighter uppercase"
+                        data-tr="news_title">
+                        THE AGRI<span class="text-agri-green-500 italic">ZEN</span> FEED.</h2>
+                </div>
+                <button onclick="alert('Viewing news archive...')"
+                    class="group flex items-center gap-4 text-xs font-black uppercase tracking-widest text-agri-dark">
+                    <span data-tr="news_archive">Explore Archive</span>
+                    <div
+                        class="w-12 h-12 rounded-full border border-agri-dark flex items-center justify-center group-hover:bg-agri-dark group-hover:text-white transition-all">
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </div>
+                </button>
+            </div>
+            <div id="news-grid"
+                class="flex flex-col gap-px bg-slate-100 border border-slate-100 rounded-[2rem] overflow-hidden">
+                <!-- News items will be dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Banner -->
+    <section class="relative h-[400px] overflow-hidden flex items-center bg-black">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2000"
+            class="absolute inset-0 w-full h-full object-cover opacity-50" alt="Handshake">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent"></div>
+        <div class="container mx-auto px-4 relative z-10 flex justify-end">
+            <div class="max-w-xl text-right reveal-right">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6 uppercase tracking-tight"
+                    data-tr="partner_title">Become Our Partner
+                </h2>
+                <p class="text-white/80 leading-relaxed italic text-lg lg:text-xl" data-tr="partner_text">
+                    "Join Agrizen as a distributor and tap into a thriving market with innovative products. Enjoy
+                    competitive margins, dedicated support, and exclusive training to boost your success."
+                </p>
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+                    class="mt-8 bg-agri-gold text-white px-8 py-3 rounded-lg font-bold hover:bg-amber-600 transition-colors uppercase tracking-widest text-sm"
+                    data-tr="partner_button">
+                    Apply Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials (Masonry Layout) -->
+    <section id="testimonials" class="py-16 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative max-w-7xl">
+            <!-- Grid Lines Background Overlay (optional, subtle) -->
+            <div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: linear-gradient(90deg, #000 1px, transparent 1px); background-size: 20% 100%;"></div>
+            
+            <!-- Masonry Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 relative z-0 pb-16 lg:pb-24">
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4 md:gap-6 pt-12 lg:pt-24">
+                    <div class="rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/farmer_portrait_1.png" class="w-full h-auto object-cover aspect-[3/4]" alt="Farmer Testimonial">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/farmer_portrait_2.png" class="w-full h-auto object-cover aspect-square" alt="Farmer Testimonial">
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="flex flex-col gap-4 md:gap-6 pt-4 lg:pt-12">
+                    <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/farmer10.png" class="w-full h-auto object-cover aspect-square" alt="Farmer Testimonial">
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform -rotate-1">
+                        <img src="./assets/farmer_portrait_4.png" class="w-full h-auto object-cover aspect-[3/4]" alt="Farmer Testimonial">
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="flex flex-col gap-4 md:gap-6 pt-0 lg:pt-8 hidden md:flex">
+                    <div class="rounded-[2.5rem] overflow-hidden shadow-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform rotate-1">
+                        <img src="./assets/farmer6.png" class="w-full h-auto object-cover aspect-[4/5]" alt="Farmer Testimonial">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/farmer7.png" class="w-full h-auto object-cover aspect-square" alt="Leader Testimonial">
+                    </div>
+                </div>
+                <!-- Column 4 -->
+                <div class="hidden lg:flex flex-col gap-4 md:gap-6 pt-20">
+                    <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/famer8.png" class="w-full h-auto object-cover aspect-square" alt="Farmer Testimonial">
+                    </div>
+                    <div class="rounded-[2rem] overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform rotate-2">
+                        <img src="./assets/farmer_portrait_3.png" class="w-full h-auto object-cover aspect-[3/4]" alt="Farmer Testimonial">
+                    </div>
+                    
+                </div>
+                <!-- Column 5 -->
+                <div class="hidden lg:flex flex-col gap-4 md:gap-6 pt-8">
+                    <div class="rounded-3xl overflow-hidden shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 transform -rotate-1">
+                        <img src="./assets/farmer9.png" class="w-full h-auto object-cover aspect-[3/4]" alt="Farmer Testimonial">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
+                        <img src="./assets/farmer7.png" class="w-full h-auto object-cover aspect-square" alt="Farmer Testimonial">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Center Text Overlay -->
+            <div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full px-4 md:px-0 lg:w-[420px] text-center z-10 flex flex-col items-center pointer-events-none">
+                <div class="bg-white/90 backdrop-blur-2xl p-6 md:p-8 rounded-[2rem] shadow-2xl border border-white/50 w-full flex flex-col items-center relative overflow-hidden pointer-events-auto">
+                    <!-- Subtle gradient glow behind text -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-agri-green-50/50 to-transparent pointer-events-none"></div>
+                    
+                    <span class="relative bg-slate-100 text-slate-600 text-[10px] font-black uppercase tracking-[0.3em] px-4 py-1.5 rounded-full mb-4 border border-slate-200" data-tr="testimonials_label">Testimonials</span>
+                    
+                    <h2 class="relative text-2xl md:text-3xl font-black text-agri-dark tracking-tight leading-[1.1] mb-4 uppercase" data-tr="testimonials_title_new">
+                        Trusted by leaders <br>
+                        <span class="text-slate-400 font-medium tracking-normal text-lg md:text-xl capitalize" data-tr="testimonials_subtitle_new">from various regions</span>
+                    </h2>
+                    
+                    <p class="relative text-slate-500 text-xs md:text-sm max-w-[280px] mx-auto mb-6 font-medium leading-relaxed" data-tr="testimonials_desc_new">
+                        Learn why professionals trust our solutions to complete their agricultural journeys.
+                    </p>
+                    
+                    <button id="open-success-stories" class="relative group bg-agri-dark text-white px-6 py-3 rounded-full font-bold inline-flex items-center gap-3 hover:bg-agri-green-600 transition-all shadow-xl hover:shadow-agri-green-600/30 text-[10px] uppercase tracking-wider hover:-translate-y-1">
+                        <span data-tr="testimonials_btn">Read Success Stories</span> 
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="pt-8 pb-24 relative overflow-hidden bg-white">
+        <!-- Background Image & Light Overlay -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <img src="./assets/cropbg.jpg" class="w-full h-full object-cover opacity-20 grayscale"
+                alt="Farm Background">
+            <div class="absolute inset-0 bg-gradient-to-br from-white/95 to-slate-50/90 backdrop-blur-[2px]"></div>
+        </div>
+        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-16 items-start relative z-10">
+            <div class="reveal-left flex flex-col gap-8">
+                <div>
+                    <h2 class="text-4xl font-bold text-agri-dark mb-6" data-tr="faq_title">Frequently Asked <br>
+                        Questions</h2>
+                    <p class="text-slate-500 mb-8 max-w-md" data-tr="faq_desc">Find answers to the most common queries
+                        about our
+                        agricultural
+                        services and crop protection solutions.</p>
+                    <div
+                        class="flex gap-4 items-center p-6 bg-agri-green-50 rounded-2xl border border-agri-green-100 mb-8">
+                        <div class="bg-agri-green-600 text-white p-3 rounded-full"><i data-lucide="phone"
+                                class="w-6 h-6"></i></div>
+                        <div>
+                            <div class="text-agri-dark font-bold" data-tr="faq_more_title">Have more questions?</div>
+                            <div class="text-agri-green-700 font-medium" data-tr="faq_more_subtitle">Call us at +91 9719
+                                717 666</div>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-2xl relative group bg-agri-green-50 hidden lg:block">
+                        <dotlottie-player
+                            src="https://assets-v2.lottiefiles.com/a/40275bf0-117d-11ee-b1ff-f7c4a4c6470b/FZ31r1lvtc.lottie"
+                            background="transparent" speed="1" class="w-full h-96 object-cover" loop autoplay>
+                        </dotlottie-player>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-agri-dark/90 via-agri-dark/20 to-transparent">
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6 flex items-end justify-between">
+                            <div>
+                                <div class="text-white font-black text-xl mb-1 uppercase tracking-tight"
+                                    data-tr="faq_support_title">Expert Support
+                                </div>
+                                <div class="text-white/80 text-sm font-medium" data-tr="faq_support_desc">Our agronomy
+                                    team is here to help you
+                                    succeed.</div>
+                            </div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-agri-green-500 flex items-center justify-center text-white shrink-0 shadow-lg group-hover:translate-x-1 transition-transform">
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faq-container" class="space-y-4 reveal-right">
+                <!-- FAQs dynamically generated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-32 bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.3] pointer-events-none"
+            style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png')"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div
+                class="bg-white rounded-[3rem] shadow-2xl overflow-hidden grid lg:grid-cols-5 border border-white reveal">
+                <!-- Contact Info Section -->
+                <div
+                    class="lg:col-span-2 bg-agri-dark p-6 md:p-12 lg:p-16 text-white relative flex flex-col justify-between overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-[400px] h-[400px] bg-agri-green-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none">
+                    </div>
+                    <div class="relative z-10">
+                        <span class="text-agri-gold font-bold uppercase tracking-[0.4em] text-[10px] mb-4 block"
+                            data-tr="contact_badge">Connect
+                            with experts</span>
+                        <h2 class="text-5xl font-black mb-8 leading-tight tracking-tighter uppercase"
+                            data-tr="contact_title">GET IN <br><span class="text-agri-green-500 italic">TOUCH.</span>
+                        </h2>
+                        <p class="mb-12 text-white/50 leading-relaxed text-lg max-w-sm" data-tr="contact_desc">Our
+                            consultants are ready to
+                            partner with you for optimized crop health and agricultural success.</p>
+
+                        <div class="space-y-6">
+                            <div
+                                class="flex items-center gap-6 group bg-white/5 hover:bg-white/10 p-4 rounded-2xl border border-white/5 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-agri-green-500/20 flex items-center justify-center text-agri-green-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase text-white/30 tracking-widest mb-1"
+                                        data-tr="contact_support">
+                                        Support Line</p>
+                                    <p class="font-bold text-lg">+91 9719 717 666</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 group bg-white/5 hover:bg-white/10 p-4 rounded-2xl border border-white/5 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-agri-green-500/20 flex items-center justify-center text-agri-green-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase text-white/30 tracking-widest mb-1"
+                                        data-tr="contact_sales">Sales
+                                        Inquiry</p>
+                                    <p class="font-bold text-sm sm:text-lg break-all">Agrizencropcare@gmail.com</p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 group bg-white/5 hover:bg-white/10 p-4 rounded-2xl border border-white/5 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-agri-green-500/20 flex items-center justify-center text-agri-green-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase text-white/30 tracking-widest mb-1"
+                                        data-tr="contact_office">Head
+                                        Office</p>
+                                    <p class="font-bold text-sm leading-snug">#3-14-10/66&67/KTV/301, Kaizen Temple
+                                        View,<br>Vijaya Sri Colony, Mansoorabad,<br>Vanasthalipuram, Hyderabad - 500070
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-6 group bg-white/5 hover:bg-white/10 p-4 rounded-2xl border border-white/5 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 rounded-xl bg-agri-green-500/20 flex items-center justify-center text-agri-green-400 group-hover:scale-110 transition-transform">
+                                    <i data-lucide="clock" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-bold uppercase text-white/30 tracking-widest mb-1"
+                                        data-tr="contact_hours">
+                                        Working Hours</p>
+                                    <p class="font-bold text-lg" data-tr="contact_hours_desc">Mon - Sat, 9AM - 6PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 mt-16 relative z-10">
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300 group shadow-lg">
+                            <svg class="w-5 h-5 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent transition-all duration-300 group shadow-lg">
+                            <svg class="w-5 h-5 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300 group shadow-lg">
+                            <svg class="w-5 h-5 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300 group shadow-lg">
+                            <svg class="w-5 h-5 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="lg:col-span-3 p-6 md:p-12 lg:p-16 bg-white relative">
+                    <div id="contact-success"
+                        class="hidden h-full flex flex-col items-center justify-center text-center py-20">
+                        <div
+                            class="w-24 h-24 bg-green-50 rounded-3xl flex items-center justify-center text-green-500 mb-8 border border-green-100 shadow-inner">
+                            <i data-lucide="check-circle" class="w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-agri-dark uppercase mb-4 tracking-tight"
+                            data-tr="contact_success_title">Message Sent
+                            Successfully</h3>
+                        <p class="text-slate-500 text-lg" data-tr="contact_success_desc">Thank you for reaching out. One
+                            of our experts will contact
+                            you shortly.</p>
+                        <button
+                            onclick="document.getElementById('contact-success').classList.add('hidden'); document.getElementById('contact-form').classList.remove('hidden');"
+                            class="mt-8 text-agri-green-600 font-bold uppercase tracking-widest text-xs hover:text-agri-green-700 underline underline-offset-4 decoration-2"
+                            data-tr="contact_success_btn">Send
+                            another message</button>
+                    </div>
+
+                    <form id="contact-form" class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-2 relative group">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_name_label">Full
+                                Name</label>
+                            <div class="relative">
+                                <i data-lucide="user"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-agri-green-500 transition-colors"></i>
+                                <input type="text" required placeholder="John Doe" data-tr="contact_name_placeholder"
+                                    class="w-full pl-12 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700">
+                            </div>
+                        </div>
+                        <div class="space-y-2 relative group">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_email_label">Email
+                                Address</label>
+                            <div class="relative">
+                                <i data-lucide="mail"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-agri-green-500 transition-colors"></i>
+                                <input type="email" required placeholder="john@example.com"
+                                    data-tr="contact_email_placeholder"
+                                    class="w-full pl-12 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700">
+                            </div>
+                        </div>
+                        <div class="space-y-2 relative group">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_phone_label">Phone
+                                Number</label>
+                            <div class="relative">
+                                <i data-lucide="phone"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-agri-green-500 transition-colors"></i>
+                                <input type="tel" required placeholder="+91 98765 43210"
+                                    data-tr="contact_phone_placeholder"
+                                    class="w-full pl-12 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700">
+                            </div>
+                        </div>
+                        <div class="space-y-2 relative group">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_company_label">Company
+                                Name</label>
+                            <div class="relative">
+                                <i data-lucide="building-2"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-agri-green-500 transition-colors"></i>
+                                <input type="text" placeholder="Your Farm/Company" data-tr="contact_company_placeholder"
+                                    class="w-full pl-12 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700">
+                            </div>
+                        </div>
+                        <div class="space-y-2 relative group md:col-span-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_subject_label">Subject</label>
+                            <div class="relative">
+                                <i data-lucide="help-circle"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 group-focus-within:text-agri-green-500 transition-colors"></i>
+                                <select required
+                                    class="w-full pl-12 pr-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700 appearance-none cursor-pointer">
+                                    <option value="" disabled selected data-tr="contact_subject_select">Select Inquiry
+                                        Type...</option>
+                                    <option value="sales" data-tr="contact_subject_sales">Product Sales & Distribution
+                                    </option>
+                                    <option value="support" data-tr="contact_subject_support">Technical Agronomy Support
+                                    </option>
+                                    <option value="partnership" data-tr="contact_subject_partnership">Business
+                                        Partnership</option>
+                                    <option value="other" data-tr="contact_subject_other">Other Inquiry</option>
+                                </select>
+                                <i data-lucide="chevron-down"
+                                    class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                            </div>
+                        </div>
+                        <div class="space-y-2 relative group md:col-span-2">
+                            <label class="text-[10px] font-black uppercase text-slate-400 tracking-widest"
+                                data-tr="contact_message_label">Your
+                                Message</label>
+                            <textarea required placeholder="How can we help you grow better?"
+                                data-tr="contact_message_placeholder" rows="4"
+                                class="w-full p-6 bg-slate-50 border border-slate-200 rounded-2xl focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/10 outline-none transition-all font-medium text-slate-700 resize-none"></textarea>
+                        </div>
+                        <div class="md:col-span-2 pt-4">
+                            <button type="submit"
+                                class="w-full md:w-auto bg-agri-dark text-white px-12 py-5 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-agri-green-600 hover:shadow-xl hover:shadow-agri-green-600/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
+                                <span data-tr="contact_send_btn">Send Message</span> <i data-lucide="send"
+                                    class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative text-white pt-32 pb-12 overflow-hidden border-t border-slate-100">
+        <!-- Background Image & Overlay -->
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <video autoplay loop muted playsinline
+                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                <source src="./assets/c_f_b_f_b_a_mp_.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-agri-dark/95 via-agri-dark/80 to-agri-dark/60"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Newsletter Glass Banner -->
+            <div
+                class="bg-white/10 backdrop-blur-md border border-white/10 rounded-[2.5rem] p-6 md:p-10 lg:p-14 mb-20 shadow-2xl relative overflow-hidden group">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-agri-green-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+                <div class="grid lg:grid-cols-2 gap-10 items-center relative z-10">
+                    <div>
+                        <h3 class="text-3xl font-black mb-4 uppercase tracking-tight" data-tr="footer_newsletter_title">
+                            Stay Rooted with <span class="text-agri-green-500">Agrizen.</span></h3>
+                        <p class="text-white/60 text-lg" data-tr="footer_newsletter_desc">Subscribe to our newsletter
+                            for the latest agronomy tips,
+                            product releases, and exclusive seasonal offers.</p>
+                    </div>
+                    <div>
+                        <div id="newsletter-success"
+                            class="hidden bg-agri-green-500/20 text-agri-green-400 font-bold py-4 px-6 rounded-2xl border border-agri-green-500/30 mb-4 text-center"
+                            data-tr="footer_newsletter_success">
+                            Subscribed Successfully!</div>
+                        <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3">
+                            <div class="relative flex-grow">
+                                <i data-lucide="mail"
+                                    class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40"></i>
+                                <input type="email" placeholder="Enter your email address"
+                                    data-tr="footer_newsletter_placeholder"
+                                    class="w-full bg-white/5 border border-white/20 rounded-2xl pl-12 pr-6 py-4 outline-none focus:border-agri-green-500 focus:ring-4 focus:ring-agri-green-500/20 text-white transition-all placeholder:text-white/30"
+                                    required>
+                            </div>
+                            <button type="submit"
+                                class="bg-agri-green-600 text-white px-8 py-4 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-agri-green-500 hover:shadow-xl hover:shadow-agri-green-600/20 hover:-translate-y-1 transition-all shrink-0">
+                                <span data-tr="footer_newsletter_btn">Subscribe Now</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Main Columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+                <!-- Brand Col -->
+                <div>
+                    <div
+                        class="inline-flex items-center mb-8 bg-white/95 backdrop-blur-sm p-4 px-6 rounded-2xl shadow-xl border border-white/20">
+                        <img src="./assets/logo.png" alt="Agrizen Logo" class="h-16 lg:h-20 object-contain">
+                    </div>
+                    <p class="text-white/60 leading-relaxed mb-8" data-tr="footer_brand_desc">Redefining modern
+                        agriculture with advanced chemistry
+                        and biological innovation. We empower farmers with sustainable crop care solutions for a better
+                        tomorrow.</p>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-4 text-white/80 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-agri-green-500 transition-colors">
+                                <i data-lucide="phone" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium">+91 9719 717 666</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-white/80 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-agri-green-500 transition-colors">
+                                <i data-lucide="phone" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium">+91 9090 898 923</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-white/80 group">
+                            <div
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-agri-green-500 transition-colors">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium">Agrizencropcare@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h4 class="text-lg font-black uppercase tracking-widest mb-8 border-b border-white/10 pb-4 text-agri-green-500"
+                        data-tr="footer_col_connect">
+                        Connect
+                        With Us</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#1877F2] hover:border-[#1877F2] transition-all duration-300 group shadow-lg">
+                            <svg class="w-4 h-4 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:border-transparent transition-all duration-300 group shadow-lg">
+                            <svg class="w-4 h-4 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300 group shadow-lg">
+                            <svg class="w-4 h-4 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300 group shadow-lg">
+                            <svg class="w-4 h-4 fill-current text-white group-hover:text-white group-hover:scale-125 transition-transform duration-300"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div
+                class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-xs text-center md:text-left">
+                <p data-tr="footer_copyright">© 2026 Agrizen Crop Care Group. All rights reserved.</p>
+                <div class="flex items-center gap-2"><span data-tr="footer_design">Designed & Developed by</span> <a
+                        href="#" class="text-white/80 hover:text-agri-green-500 font-bold transition-colors">Agrizen
+                        Tech</a>
+                </div>
+                <div class="flex gap-8">
+                    <a href="#" class="hover:text-white transition-colors" data-tr="footer_privacy">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors" data-tr="footer_terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-100 flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-black text-agri-dark uppercase tracking-tight">Modal Title
+                </h3>
+                <button class="close-modal p-2 hover:bg-slate-100 rounded-full transition-colors"><i data-lucide="x"
+                        class="w-6 h-6"></i></button>
+            </div>
+            <div id="modal-body" class="p-8 overflow-y-auto max-h-[70vh]">
+                <!-- Modal content -->
+            </div>
+            <div class="p-8 bg-slate-50 border-t border-slate-100 flex justify-end">
+                <button
+                    class="close-modal bg-agri-dark text-white px-8 py-3 rounded-xl font-bold uppercase tracking-widest text-xs">Close
+                    Window</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot UI -->
+    <div id="chatbot-container"
+        class="fixed bottom-24 right-4 md:right-8 z-[100] w-[90vw] md:w-[400px] h-[600px] max-h-[80vh] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300 origin-bottom-right scale-0 opacity-0 pointer-events-none border border-slate-100">
+        <!-- Header -->
+        <div class="bg-agri-dark text-white p-4 flex justify-between items-center shrink-0">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-agri-green-500 rounded-full flex items-center justify-center shadow-lg relative overflow-hidden">
+                    <i data-lucide="bot" class="w-6 h-6 text-white relative z-10"></i>
+                    <div class="absolute inset-0 bg-white/20 animate-ping"></div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm tracking-tight text-white">Agrizen AI Support</h4>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                        <span class="text-[10px] text-white/70 uppercase tracking-widest font-bold">Online</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <select id="chatbot-lang"
+                    class="bg-white/10 text-xs text-white border border-white/20 rounded-lg px-2 py-1 outline-none cursor-pointer">
+                    <option value="en" class="text-agri-dark">EN</option>
+                    <option value="hi" class="text-agri-dark">HI</option>
+                    <option value="te" class="text-agri-dark">TE</option>
+                    <option value="ta" class="text-agri-dark">TA</option>
+                </select>
+                <button id="close-chatbot"
+                    class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white/10 transition-colors">
+                    <i data-lucide="x" class="w-5 h-5 text-white"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Messages Area -->
+        <div id="chatbot-messages" class="flex-1 p-4 overflow-y-auto bg-slate-50 flex flex-col gap-4">
+            <!-- Messages will be injected here by script.js -->
+        </div>
+
+        <!-- Predefined FAQs Suggestions -->
+        <div class="bg-white px-4 py-3 border-t border-slate-100 shrink-0 shadow-[0_-10px_10px_-10px_rgba(0,0,0,0.05)]">
+            <div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide" id="chatbot-suggestions">
+                <!-- Suggestion buttons injected here -->
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="p-4 bg-white border-t border-slate-100 shrink-0">
+            <form id="chatbot-form" class="flex gap-2">
+                <input type="text" id="chatbot-input" placeholder="Type your question..."
+                    data-tr="chatbot_input_placeholder"
+                    class="flex-1 bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-agri-green-500 focus:ring-2 focus:ring-agri-green-500/20 transition-all text-slate-700 placeholder:text-slate-400"
+                    autocomplete="off">
+                <button type="submit"
+                    class="bg-agri-green-600 text-white w-12 h-12 rounded-xl flex items-center justify-center hover:bg-agri-green-700 hover:shadow-lg hover:shadow-agri-green-600/30 transition-all shrink-0">
+                    <i data-lucide="send" class="w-5 h-5 text-white"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle"
+        class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[60] bg-agri-green-600 text-white w-14 h-14 rounded-full shadow-[0_10px_25px_rgba(86,175,67,0.4)] hover:bg-agri-green-700 transition-all duration-300 flex items-center justify-center hover:scale-110 group cursor-pointer border-2 border-white/20">
+        <i data-lucide="message-square"
+            class="w-6 h-6 absolute transition-all duration-300 group-hover:scale-0 group-hover:opacity-0 text-white"></i>
+        <i data-lucide="bot"
+            class="w-6 h-6 absolute transition-all duration-300 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 text-white"></i>
+        <!-- Unread badge -->
+        <span
+            class="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full border-2 border-white text-[8px] font-bold flex items-center justify-center">1</span>
+    </button>
+
+    <!-- Back to top -->
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        class="fixed bottom-24 right-8 z-[59] bg-agri-dark text-white p-3 rounded-lg shadow-2xl hover:bg-agri-green-700 transition-colors hidden md:flex items-center justify-center">
+        <i data-lucide="chevron-up" class="text-white"></i>
+    </button>
+
+    <script src="translations.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
